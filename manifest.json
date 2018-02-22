@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Deploy Day",
+  "description": "This extension notifies the user whether it's a deploy day.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://github.com/FiscalNote/*", "https://github.com/FiscalNote/*"],
+      "js": ["jquery-3.3.1.min.js", "moment.js", "script.js"]
+    }
+  ]
+}
