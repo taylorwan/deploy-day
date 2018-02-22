@@ -3,6 +3,7 @@ console.log('i\'m here');
 // Checking page title
 if (document.title.indexOf("FiscalNote")   !== -1 &&
     document.title.indexOf("Pull Request") !== -1 &&
+    $('.discussion-item-merged').length    <    1 &&
     [2, 4].includes(moment().day())               &&
     moment().hour() > 8                           &&
     moment().hour() < 19) {

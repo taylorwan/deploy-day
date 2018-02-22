@@ -10,7 +10,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://github.com/FiscalNote/*", "https://github.com/FiscalNote/*"],
+      "matches": ["http://github.com/FiscalNote/**/pull/*", "https://github.com/FiscalNote/**/pull/*"],
       "js": ["jquery-3.3.1.min.js", "moment.js", "script.js"]
     }
   ]
